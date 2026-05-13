@@ -7,17 +7,13 @@
 
 import numpy as np
 import sys
-sys.path.insert(0, '/home/claude/comhai_placo')
 
 from core    import (estimate_confusion_matrix, calibrate_temperature,
                      apply_calibration, predict_instance, placo_predict)
 from simulate import (simulate_model_logits, simulate_all_humans,
                       generate_dataset)
 
-
-# 
 # HELPERS
-# 
 
 def evaluate_method(method: str,
                     model_probs_test: np.ndarray,
@@ -55,9 +51,9 @@ def best_human_accuracy(human_labels_test, true_labels_test):
     return max(accs)
 
 
-# 
+
 # EXPERIMENT 1: Reproduce Paper 1 — varying humans & model
-# 
+
 
 def run_experiment(scenario_name: str,
                    human_accuracies: list,
@@ -109,9 +105,9 @@ def run_experiment(scenario_name: str,
     return {m: (np.mean(v), np.std(v)) for m, v in results.items()}
 
 
-# 
+
 # EXPERIMENT 2: Multiple AI models (Paper 1 extension)
-# 
+
 
 AI_MODELS = {
     "Weak CNN (≈57%)":       0.57,
@@ -180,9 +176,9 @@ def run_placo_experiment(human_accuracies: list,
 # 
 
 if __name__ == "__main__":
-    print("=" * 65)
+    
     print("  TASK 1 — REPRODUCING PAPER RESULTS")
-    print("=" * 65)
+    
 
     K = 10
 
@@ -213,9 +209,9 @@ if __name__ == "__main__":
         print(f"  {m:<20}: {mean:.2f}% ± {std:.2f}%")
 
     #  EXTRA MODELS: not in paper
-    print("\n" + "=" * 65)
+    
     print("  EXTENDED EVALUATION — MULTIPLE AI BASE MODELS")
-    print("=" * 65)
+    
     human_accs = [0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8]
     rows = []
     for model_name, model_acc in AI_MODELS.items():
@@ -231,9 +227,9 @@ if __name__ == "__main__":
               f"Δ={improvement:+.1f}%")
 
     #  PLACO Experiment
-    print("\n" + "=" * 65)
+    
     print("  PLACO — COST-AWARE SUBSET SELECTION (Paper 2)")
-    print("=" * 65)
+    
     costs  = np.array([1.0, 1.5, 2.0, 3.0, 2.5, 1.0, 4.0])   # per-human cost
     budget = 6.0                                                  # total budget
     print(f"  Human costs: {costs}  |  Budget: {budget}  "
