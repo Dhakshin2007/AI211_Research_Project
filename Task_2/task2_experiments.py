@@ -1,7 +1,4 @@
 """
-task2_experiments.py
-====================
-Full Task 2 experiment runner.
 Experiments:
   E1: Unbiased humans :- does ComHAI affect fairness?
   E2: Accuracy-biased humans :- mild bias

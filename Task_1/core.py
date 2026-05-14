@@ -1,8 +1,8 @@
 """
 
  ComHAI + PLACO — Full Implementation from Papers
- Paper 1: Singh, Jain & Jha (AAMAS 2023)
- Paper 2: PLACO (IOS Press 2024)
+ Paper 1: ComHai
+ Paper 2: PLACO
 
 """
 

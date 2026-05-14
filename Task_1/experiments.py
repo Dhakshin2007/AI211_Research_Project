@@ -1,10 +1,3 @@
-"""
-
- MAIN EXPERIMENT RUNNER
- Reproduces Paper 1 (ComHAI) results + PLACO + Extra Models
-
-"""
-
 import numpy as np
 import sys
 

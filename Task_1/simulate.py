@@ -1,10 +1,3 @@
-"""
-
- Data & Model Simulation — mimics CIFAR-10H setup
- from Paper 1 Section 5.1
-
-"""
-
 import numpy as np
 from scipy.special import softmax
 from typing import Optional
@@ -37,7 +30,7 @@ def simulate_model_logits(true_labels: np.ndarray,
 
 
 
-# 2.  SIMULATE HUMAN LABELS  (Paper 1 Section 5.1 exact method)
+# 2.  SIMULATE HUMAN LABELS 
 
 
 def simulate_human_label(true_label: int,
