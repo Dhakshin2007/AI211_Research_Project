@@ -223,9 +223,9 @@ Takes **3–5 minutes** to complete. Must be run from the folder containing all 
 
 ### Step 1 — Header
 ```
-========================================================================
+
   TASK 2 — FAIRNESS EVALUATION OF HUMAN-AI TEAMS
-========================================================================
+
 ```
 
 ---
@@ -264,9 +264,9 @@ For each bias level (`none`, `mild`, `moderate`, `severe`, `mixed`), you see:
 ### Step 3 — Bias progression summary (E6)
 
 ```
-========================================================================
+
   E6 — FAIRNESS DEGRADATION AS HUMAN BIAS INCREASES
-========================================================================
+
   none        : Acc=88.4%  DP gap=5.5%  EO gap=0.9%  Acc gap=0.2%
   mild        : Acc=86.2%  DP gap=3.7%  EO gap=23.1% Acc gap=22.5%
   moderate    : Acc=85.6%  DP gap=9.6%  EO gap=26.1% Acc gap=14.9%
@@ -285,9 +285,9 @@ For each bias level (`none`, `mild`, `moderate`, `severe`, `mixed`), you see:
 ### Step 4 — Per-group accuracy breakdown (E7)
 
 ```
-========================================================================
+
   E7 — PER-GROUP ACCURACY (Majority A=0 vs Minority A=1)
-========================================================================
+
 
   Unbiased humans:
   Method                 Majority A=0    Minority A=1     Gap
@@ -348,9 +348,9 @@ Takes **4–6 minutes** to complete.
 
 ### Step 1 — Header
 ```
-========================================================================
+
   TASK 3 — NOVEL FAIRNESS-AWARE HUMAN-AI ALGORITHMS
-========================================================================
+
 ```
 
 ---
@@ -406,9 +406,9 @@ For each setting you see:
 ### Step 4 — Lambda sensitivity table
 
 ```
-========================================================================
+
   LAMBDA SENSITIVITY: Effect of Fairness Weight
-========================================================================
+
   Lambda       Accuracy     EO Gap     DP Gap    Acc Gap
   -------------------------------------------------------
   0.0           88.4%        0.9%       5.5%       0.2%

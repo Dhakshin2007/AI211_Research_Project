@@ -38,3 +38,11 @@ ENV/
 *.out
 *.synctex.gz
 *.toc
+
+# Ignoring Learning Files
+Complete_Project_All_Tasks.pdf
+Task_3/Task3_Novel_Algorithms_Study_Guide.pdf
+Task_2/Task2_Fairness_Study_Guide.pdf
+Task_1/Task1_ComHAI_PLACO_Report.tex
+Task_1/Task1_ComHAI_PLACO_Report.pdf
+Task_1/Task1_Report.pdf
