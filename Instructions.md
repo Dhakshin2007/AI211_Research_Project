@@ -79,9 +79,9 @@ When you run `experiments.py`, it executes 6 experiments in order:
 
 ### Step 1 — Setup header prints
 ```
-=================================================================
+
   TASK 1 — REPRODUCING PAPER RESULTS
-=================================================================
+
 ```
 Nothing is computed yet. Just a visual separator.
 
@@ -134,9 +134,9 @@ Nothing is computed yet. Just a visual separator.
 
 ### Step 4 — Extended evaluation (your original contribution)
 ```
-=================================================================
+
   EXTENDED EVALUATION — MULTIPLE AI BASE MODELS
-=================================================================
+
   Weak CNN (≈57%)             : AI=39.4%  ComHAI=95.3%  Δ=+55.9%
   KNN (≈60%)                  : AI=41.8%  ComHAI=95.3%  Δ=+53.5%
   Logistic Reg (≈65%)         : AI=46.4%  ComHAI=95.4%  Δ=+49.1%
@@ -156,9 +156,9 @@ Nothing is computed yet. Just a visual separator.
 
 ### Step 5 — PLACO experiment (Paper 2)
 ```
-=================================================================
+
   PLACO — COST-AWARE SUBSET SELECTION (Paper 2)
-=================================================================
+
   Human costs: [1.  1.5 2.  3.  2.5 1.  4. ]  |  Budget: 6.0  |  Total: 15.0
   Model only   : 38.87%
   ComHAI (all) : 95.61%
